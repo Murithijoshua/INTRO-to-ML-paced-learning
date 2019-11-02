@@ -10,7 +10,7 @@ X = np.array([[3.1, 7.2], [4, 6.7], [2.9, 8], [5.1, 4.5], [6, 5],
 4.9]])
 y = np.array([0, 0, 0, 1, 1, 1, 2, 2, 2, 3, 3, 3])
 # Create the logistic regression classifier
-classifier = linear_model.LogisticRegression(solver='liblinear', C=1)
+classifier = linear_model.LogisticRegression(solver='liblinear', C=100)
 #training the classifier
 classifier.fit(X,y)
 #visualize the performance of the classifier
