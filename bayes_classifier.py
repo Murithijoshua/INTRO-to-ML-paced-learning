@@ -7,13 +7,13 @@ import matplotlib.pyplot as plt
 import seaborn as sns; sns.set()
 
 # Import data
-training = pd.read_csv('irish_train.csv')
+# training = pd.read_csv('irish_train.csv')
 test = pd.read_csv('irish_test.csv')
 
 
 # Create the X, Y, Training and Test
-xtrain = training.drop('Species', axis=1)
-ytrain = training.loc[:, 'Species']
+# xtrain = training.drop('Species', axis=1)
+# ytrain = training.loc[:, 'Species']
 xtest = test.drop('Species', axis=1)
 ytest = test.loc[:, 'Species']
 
@@ -21,8 +21,8 @@ ytest = test.loc[:, 'Species']
 # Init the Gaussian Classifier
 model = GaussianNB()
 
-# Train the model 
-model.fit(xtrain, ytrain)
+# # Train the model 
+# model.fit(xtrain, ytrain)
 
 # Predict Output 
 pred = model.predict(xtest)
